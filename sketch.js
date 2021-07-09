@@ -65,6 +65,13 @@ function draw(){
     platform.display();
     //log6.display();
     slingshot.display();    
+
+}
+
+function keyPressed(){
+    if(keyCode === 32){
+        slingshot.newBird(bird.body)
+    }
 }
 
 function mouseDragged(){
